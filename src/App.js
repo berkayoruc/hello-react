@@ -1,15 +1,12 @@
 // import react from "react";
 import "./App.css";
-
-const name = "Berkay";
-const isLoggedIn = true;
+import User from "./components/User.js";
 
 function App() {
   // return react.createElement("div", null, "hello");
   return (
     <>
-      <h1>{isLoggedIn ? `Benim adım ${name}` : 'Giriş yapmadınız'}</h1>
-      {/* {!isLoggedIn && "Giriş yapmadınız"} */}
+      <User name="Berkay" surname="Oruç" isLoggedIn={true} age={27} />
     </>
   );
 }
