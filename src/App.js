@@ -1,13 +1,16 @@
 // import react from "react";
 import "./App.css";
-import Header from "./components/Header";
+
+const name = "Berkay";
+const isLoggedIn = true;
 
 function App() {
   // return react.createElement("div", null, "hello");
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <h1>{isLoggedIn ? `Benim adım ${name}` : 'Giriş yapmadınız'}</h1>
+      {/* {!isLoggedIn && "Giriş yapmadınız"} */}
+    </>
   );
 }
 export default App;
